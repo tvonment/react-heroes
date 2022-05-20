@@ -16,6 +16,9 @@ const HeroForm: React.FC = () => {
         const heroName = heroNameRef.current!.value;
         const heroPower = heroPowerRef.current!.value;
 
+        heroPowerRef.current!.value = "";
+        heroNameRef.current!.value = "";
+
         if (heroName.trim().length === 0) { return; }
 
         heroesCtx.addHero(new Hero(heroName, heroPower))
