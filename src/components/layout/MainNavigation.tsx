@@ -11,8 +11,8 @@ const MainNavigation: React.FC = () => {
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="me-auto">
-                            <Nav.Link><Link to="/">Heroes</Link></Nav.Link>
-                            <Nav.Link><Link to="/favourites">Favourites</Link></Nav.Link>
+                            <Nav.Link as={Link} to="/">Heroes</Nav.Link>
+                            <Nav.Link as={Link} to="/favourites">Favourites</Nav.Link>
                         </Nav>
                     </Navbar.Collapse>
                 </Container>

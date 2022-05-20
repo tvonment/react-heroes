@@ -3,7 +3,7 @@ class Hero {
     name: string;
 
     constructor(name: string) {
-        this.id = new Date().toISOString();
+        this.id = "";
         this.name = name;
     }
 }

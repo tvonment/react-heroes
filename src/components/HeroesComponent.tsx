@@ -9,7 +9,7 @@ const HeroesComponent: React.FC = () => {
     return (
         <ul className={classes.heroes}>
             {heroesCtx.heroes.map((hero) => (
-                <HeroComponent hero={hero} onDeleteHero={heroesCtx.deleteHero.bind(null, hero)} />
+                <HeroComponent key={hero.id} hero={hero} onDeleteHero={heroesCtx.deleteHero.bind(null, hero)} />
             ))}
         </ul>
     );
