@@ -1,4 +1,4 @@
 const FavouriteHeroesPage: React.FC = () => {
-    return (<div>Favorite Heroes</div>);
+    return (<div>Favorite Heroes!!!!</div>);
 }
 export default FavouriteHeroesPage;
